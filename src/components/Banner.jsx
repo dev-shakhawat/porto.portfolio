@@ -1,7 +1,12 @@
 import React from "react";
 
+
+// icons
+import { MdArrowForwardIos } from "react-icons/md";
+import { MdArrowBackIosNew } from "react-icons/md";
 import { IoIosArrowDropright } from "react-icons/io";
 
+import bnr from "../assets/bnr.jpg";
 const Banner = () => {
   return (
     <div className=" pb-12  pt-[150px] ">
@@ -21,7 +26,19 @@ const Banner = () => {
 
 
         {/* slider */}
+        <div className="relative mt-8">
+          <div className="">
+            <button type="button" className=" absolute top-[50%] text-white left-[2%]   "><MdArrowBackIosNew/></button>
+            <button type="button" className=" absolute top-[50%] text-white  right-[2%]  "><MdArrowForwardIos/></button>
+          </div>
 
+          <div className="w-full h-[460px] flex overflow-hidden  ">
+            <img src={bnr} alt="bnr" className=" min-w-full h-full  "/>
+            <img src={bnr} alt="bnr" className=" min-w-full h-full  "/>
+            <img src={bnr} alt="bnr" className=" min-w-full h-full  "/>
+            <img src={bnr} alt="bnr" className=" min-w-full h-full  "/>
+          </div>
+        </div>
 
       </div>
     </div>
