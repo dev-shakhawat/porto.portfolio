@@ -1,7 +1,11 @@
 
 
+import Advertize from "./components/Advertize"
 import Banner from "./components/Banner"
+import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
+import Portfolio from "./components/Portfolio"
+import Service from "./components/Service"
 
 
 function App() {
@@ -10,6 +14,10 @@ function App() {
     <>
     <Navbar/>
     <Banner/>
+    <Portfolio/>
+    <Service/>
+    <Advertize/>
+    <Footer/>
     </>
   )
 }

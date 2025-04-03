@@ -20,12 +20,6 @@
 }
 
 
-/* common css */
-*{
-  @apply font-poppins;
-}
-
-
 
 /* container */
 @utility container {
@@ -43,4 +37,30 @@
   @variant xl {
     padding-inline: 120px;
   }
+}
+
+
+
+
+/* common css */
+*{
+  @apply font-poppins;
+}
+
+
+
+
+
+
+
+.masnrygrd {
+  @apply flex  gap-4
+}
+.masnrygrdclm {
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.masnrygrdclm > * { 
+  @apply mb-4
 }
